@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.info {
+  grid-area: info;
+}
+.work {
+  grid-area: work;
+}
+.education {
+  grid-area: education;
+}
+
+.outer {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 0 16px;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-areas:
+    'info work '
+    'info work '
+    'info education';
+
+  background-color: #f1f1f1;
+  min-height: calc(100vh - 20px);
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+.info-container {
+  padding: 0 16px;
+}
+
+.heading {
+  color: #000000;
+  font-size: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.name {
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.dates {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin: 10px 0;
+  color: #960039;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #960039;
+}
+
+hr {
+  opacity: 40%;
+}
+
+@media (max-width: 650px) {
+  .grid-container {
+    display: grid;
+
+    grid-template-areas:
+      'info '
+      'work '
+      'education';
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid-container > div {
+    font-size: 40px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .dates {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}
