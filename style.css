@@ -119,22 +119,24 @@ hr {
 
 @media (min-width: 1440px) {
   .grid-container > div {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .heading {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .title {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .dates {
-    font-size: 26px;
+    font-size: 18px;
   }
 
   p {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
+
+
